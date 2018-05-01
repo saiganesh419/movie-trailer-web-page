@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+.img{
+      border-radius: 20px;
+}
+.container{
+         display:flex;
+         flex-wrap:wrap;
+         
+                  }
+   
+      .box{
+          width:60%;
+          min-height:300px;
+
+          }
+    .title{background-color:black; color:white;}
+       div.blue:hover{
+              
+              
+              background-color:green;
+              border-radius: 20px;
+                           }
+       div.sky:hover{
+             
+              background-color:green;
+              border-radius: 20px;
+                           }
+      div.green:hover{
+              
+              background-color:green;
+              border-radius: 20px;
+                           }
+      div.red:hover{
+       
+              background-color:green;
+              border-radius: 20px;
+                           }
+      
+ @media screen and (min-width:450px){
+           .blue{width:50%;}
+           
+           .sky{ width:50%;}
+
+           .green{ width:50%;}
+           
+         
+           .red{ width:50%;}
+
+      }
+
+         .total{
+               background-color: rgb(253, 251, 251);
+         } 
+ 
+</style>
+</head>
+<body>
+
+<div class="total">
+<center>
+<h1 class="title">MOVIES TRAILERS</h1>
+<div class="container">
+<div class="box blue" onclick = "onc(eX_iASz1Si8)"><img vspace="35" src="batman-v-superman-dawn-of-justice--story_647_032516034413.jpg" style="width:60%" width="500" height="300" hspace="45" class="img"></a><h1 style="color:rgb(3, 3, 3);">Batman v Superman: Dawn of Justice</h1></div>
+<div class="box sky"><a href="https://youtu.be/GokKUqLcvD8"><img vspace="35"src="FinalTDKRiseComboCharBannerfull2.jpg" style="width:60%" width="500" height="300" hspace="45" class="img"></a><h1 style="color:rgb(17, 15, 15);">The Dark Knight Rises</h1></div>
+<div class="box green"><a href="https://youtu.be/EXeTwQWrcwY"><img vspace="35" src="the-dark-knight-poster-18.jpg" style="width:60%" width="500" height="300" hspace="45" class="img"></a><h1 style="color:rgb(14, 13, 13);">The Dark Knight</h1></div>
+<div class="box red"><a href="https://youtu.be/vak9ZLfhGnQ"><img vspace="35" src="IMG_225695.png" style="width:60%" width="500" height="300" hspace="45" class="img"></a><h1 style="color:rgb(17, 16, 16);">Batman Begins</h1></div>
+</div>
+</center>
+</div>
+<script>
+     var model =document.getElementById('mymodal');
+     var span=document.getElementsByClassName("close")[0];
+     onc = function(c)  {
+           modal.style.display = "block";
+           document.getElementsByTagName("iframe")[0].setAttribute("src","https://www.youtube.com/embed/"+c);
+     } 
+     span.onclick = functon (event){
+           modal.style.display="none";
+     }
+     window.onclick = function (event){
+           if(event.target = modal){
+                 modal.style.display="none";
+           }
+     }  
+</script>
+</body>
+</html>
